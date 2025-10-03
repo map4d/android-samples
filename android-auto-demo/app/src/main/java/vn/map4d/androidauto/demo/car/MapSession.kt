@@ -10,7 +10,9 @@ import vn.map4d.androidauto.map.map4dMapInstaller
 
 class MapSession : Session() {
 
-  private val map4dCarMap = map4dMapInstaller().install()
+  private val map4dCarMap = map4dMapInstaller()
+    .onCreated(CarMapWidgets())
+    .install()
 
   override fun onCreateScreen(intent: Intent): Screen {
     val mapScreen = MapScreen(map4dCarMap)
