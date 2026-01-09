@@ -4,11 +4,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import vn.map4d.map.annotations.MFMarkerOptions
 import vn.map4d.map.camera.MFCameraUpdateFactory
+import vn.map4d.map.core.MFMapView
 import vn.map4d.map.core.Map4D
 import vn.map4d.map.core.OnMapReadyCallback
 import vn.map4d.map.demo.databinding.ActivityMainBinding
 import vn.map4d.types.MFLocationCoordinate
-import vn.map4d.map.core.MFMapView
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
